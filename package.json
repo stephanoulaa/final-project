@@ -1,0 +1,27 @@
+{
+  "name": "final-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephanoulaa/final-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stephanoulaa/final-project/issues"
+  },
+  "homepage": "https://github.com/stephanoulaa/final-project#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.17.2",
+    "client-sessions": "^0.8.0",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.10"
+  }
+}
