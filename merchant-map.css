@@ -24,7 +24,13 @@ body {
   background-color: cornflowerblue;
 }
 
+.footer {
+    border: 15px solid cornflowerblue;
+    background-color: cornflowerblue;
+}
+
 .powered-by {
+    color: black;
     text-align: center;
 }
 

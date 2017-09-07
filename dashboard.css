@@ -20,11 +20,17 @@ body {
 }
 
 .navbar-brand:hover {
-  border: 5px solid cornflowerblue;
-  background-color: cornflowerblue;
+    border: 5px solid cornflowerblue;
+    background-color: cornflowerblue;
+}
+
+.footer {
+    border: 15px solid cornflowerblue;
+    background-color: cornflowerblue;
 }
 
 .powered-by {
+    color: black;
     text-align: center;
 }
 
