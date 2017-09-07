@@ -7,7 +7,7 @@ $(document).ready(function(){
         }
         $.post('/signup', signupInfo, function(data){
             console.log(data)
-            window.location.href="/dashboard"
+            window.location.href="/dashboard.html"
         })
     })
 
@@ -19,7 +19,7 @@ $(document).ready(function(){
         }
         $.post('/login', signupInfo, function(data){
             console.log(data)
-            window.location.href="/dashboard"
+            window.location.href="/dashboard.html"
         })
     })
 

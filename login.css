@@ -21,4 +21,6 @@ body {
     height: 35%;
     width: 35%;
     opacity: .4;
+    border: 15px solid skyblue;
+    background-color: skyblue;
 }

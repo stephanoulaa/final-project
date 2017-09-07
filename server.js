@@ -69,6 +69,10 @@ app.get('/', function(req, res){
     res.sendFile('./login.html', {root:'./'})
 })
 
+app.get('/', function(req, res){
+    res.sendFile('./dashboard.html', {root:'./'})
+})
+
 app.get('/session-test', function(req, res){
     console.log('session? ', req.session)
     if ( !req.session.counter ) {
