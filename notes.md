@@ -1,4 +1,4 @@
-DASHBOARD:
+                             **DEPLOY WHEN DONE**
 
 =====================================================================================
                 W E L C O M E   T O   Y O U R   D A S H B O A R D
@@ -33,9 +33,7 @@ MERCHANT MAP - from coinmap's API
 
 QUESTIONS? - contact info w/pic, links to: github, fb, twitter
 
-
 FOOTER: same as portfolio
 
 IF TIME:
 -make responsive
--make it a SPA

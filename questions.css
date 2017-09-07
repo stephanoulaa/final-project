@@ -24,6 +24,50 @@ body {
   background-color: cornflowerblue;
 }
 
+
+
+.contact-page {
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    padding-top: 75px;
+}
+
+#questions {
+    font-family: "Courier New";
+    padding-bottom: 5px;
+}
+
+.stay-in-touch {
+    font-family: "Courier New";
+}
+
+#linkedin {
+    height: 10%;
+    width: 10%;
+}
+
+#fb-insta {
+    height: 9%;
+    width: 9%;
+}
+
+#vegas {
+    border-radius: 50%;
+    height: 30%;
+    width: 30%;
+    padding-bottom: 15px;
+}
+
+#phone-text {
+    font-family: "Courier New";
+    padding-bottom: 50px;
+}
+
+
+
+
+
 .powered-by {
     text-align: center;
 }
