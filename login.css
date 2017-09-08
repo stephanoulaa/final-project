@@ -21,6 +21,13 @@ body {
     height: 35%;
     width: 35%;
     opacity: .4;
-    border: 15px solid skyblue;
-    background-color: skyblue;
+    border: 15px solid greenyellow;
+    background-color: greenyellow;
+}
+
+.footer {
+    padding-top: 100px;
+    border: 15px solid greenyellow;
+    background-color: greenyellow;
+    opacity: .4;
 }
