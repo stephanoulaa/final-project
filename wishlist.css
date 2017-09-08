@@ -31,12 +31,11 @@ body {
 }
 
 
-/* TO DO LIST ==> WISH LIST */
+/* --------------------------TO DO LIST ==> WISH LIST----------------------------- */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400);
 
 body {
     font: normal normal 13px/16px "Open Sans", sans-serif;
-/*    background: #ccc;*/
 }
 
 .wishlist{
@@ -59,7 +58,7 @@ input {
 #button{
     display: inline-block;
     background-color:#fc999b;
-    color:#ffffff;
+    color: white;
     border-radius: 5px;
     text-align:center;
     margin-top:2px;
@@ -67,6 +66,7 @@ input {
 }
 
 #button:hover {
+    /*when cursor is on button and pointing to it*/
     cursor: pointer;
     opacity: .8;
 }
@@ -77,14 +77,16 @@ ol {
 
 ol li { 
     padding: 5px;
-    color:#000;
+    color: black;
 }
 
 /*ol li:nth-child(even){background: #dfdfdf;}*/
 
-.strike{text-decoration: line-through;}
+.strike {
+    text-decoration: line-through;
+}
 
-li:hover{
+li:hover {
   cursor: pointer;
  }
 
