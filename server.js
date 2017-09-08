@@ -66,11 +66,11 @@ app.use(function(req, res, next){
 })
 
 app.get('/', function(req, res){
-    res.sendFile('./login.html', {root:'./'})
+    res.sendFile('./login.html', {root:''})
 })
 
 app.get('/', function(req, res){
-    res.sendFile('./dashboard.html', {root:'./'})
+    res.sendFile('./dashboard.html', {root:''})
 })
 
 app.get('/session-test', function(req, res){

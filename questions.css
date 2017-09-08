@@ -13,6 +13,7 @@ body {
 .nav {
     padding-left: 50px;
     padding-top: 50px;
+    border-bottom: 5px double cornflowerblue;
 }
 
 .navbar-brand {
@@ -31,6 +32,12 @@ body {
     margin-right: 100px;
     text-align: center;
     padding-top: 75px;
+}
+
+.column2 {
+    border: 3px double goldenrod;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 #questions {
