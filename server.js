@@ -1,6 +1,7 @@
 var express = require('express')
 var app = express()
 var bodyParser = require('body-parser')
+var request = require('request');
 var mongoose = require('mongoose')
 var bcrypt = require('bcryptjs')
 var sessionsModule = require('client-sessions')
@@ -82,6 +83,27 @@ app.get('/session-test', function(req, res){
         req.session.counter++
     }
     res.send('session counter: ' + req.session.counter)
+})
+
+//ADJUST FOR COINBASE API
+//app.get('/coinbase', function(req, res){
+//    //console.log something here...
+//    //console.log(req.query.date, 'query string');
+//    request('https://api.coinbase.com/v2/exchange-rates',
+//    function (error, response, body) {
+//        console.log('error: ', error)
+//        console.log('body:', body); 
+//        //var bodyAsObj = JSON.parse(body);
+//        //console.log(bodyAsObj);
+//        res.send(body); 
+//    });
+//    
+//})
+//OR maybe...
+app.get('/https://api.coinbase.com/v2/exchange-rates', function(){
+    console.log(data);
+    //res.send(body); 
+    
 })
 
 app.post('/signup', function(req, res){
