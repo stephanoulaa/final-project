@@ -6,6 +6,13 @@
         <link rel="stylesheet" href="merchant-map.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
         <link rel="shortcut icon" type="image/png" href="image/sigma.png">
+        <!--GOOGLE MAPS API-->
+        <style>
+           #map {
+            height: 400px;
+            width: 100%;
+           }
+        </style>
     </head>
     <body>
         
@@ -27,7 +34,8 @@
         
         
         <!--get coinmap's API to display map-->
-        
+        <h3>My Google Maps Demo</h3>
+            <div id="map"></div>
         
         
         
@@ -41,6 +49,31 @@
                 </span>
             </div>
         </footer>
+        
+        
+        <!--GOOGLE MAPS API-->
+        <script>
+              function initMap() {
+                var ozo = {lat: 40.017564, lng: -105.282169};
+                var nederland = {lat: 39.9603849, lng: -105.5806919};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 4,
+                  center: ozo
+                });
+                var marker = new google.maps.Marker({
+                  position: ozo,
+                  map: map
+                });
+                var marker = new google.maps.Marker({
+                  position: nederland,
+                  map: map
+                });
+              }
+            </script>
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCr0HVHd5WZb3eQ5I4-zxJm0VhlY1XjXGU&callback=initMap">
+            </script>
+        <!--^^GOOGLE MAPS API^^-->
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

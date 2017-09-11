@@ -70,9 +70,10 @@ app.get('/', function(req, res){
     res.sendFile('./login.html', {root:'.'})
 })
 
-app.get('/', function(req, res){
-    res.sendFile('./dashboard.html', {root:'.'})
-})
+//so there aren't two files pointing to the home page
+//app.get('/', function(req, res){
+//    res.sendFile('./dashboard.html', {root:'.'})
+//})
 
 app.get('/session-test', function(req, res){
     console.log('session? ', req.session)
@@ -85,26 +86,34 @@ app.get('/session-test', function(req, res){
     res.send('session counter: ' + req.session.counter)
 })
 
-//ADJUST FOR COINBASE API
-//app.get('/coinbase', function(req, res){
-//    //console.log something here...
-//    //console.log(req.query.date, 'query string');
+//COINBASE API - EXCHANGE RATE
+var Client = require('coinbase').Client;
+var client = new Client({'apiKey': 'JGGtZvJTVqlqBLXW', 
+                         'apiSecret': '1ySK2pjOSYeZN2md9qax601NiqmOGMKv'});
+
+function getExchangeRate(){
+//    console.log("hello");
+    client.getExchangeRates({'currency': 'BTC'}, function(err, rates) {
+        console.log(rates);
+    })
+}
+getExchangeRate();
+//do i need this to send data up to frontend?
+//app.get('/exchange_rate', function(req, res){
 //    request('https://api.coinbase.com/v2/exchange-rates',
 //    function (error, response, body) {
 //        console.log('error: ', error)
 //        console.log('body:', body); 
-//        //var bodyAsObj = JSON.parse(body);
-//        //console.log(bodyAsObj);
 //        res.send(body); 
 //    });
 //    
 //})
-//OR maybe...
-app.get('/https://api.coinbase.com/v2/exchange-rates', function(){
-    console.log(data);
-    //res.send(body); 
-    
-})
+
+//COINBASE API - BUYING PRICE
+
+//COINBASE API - SELLING PRICE
+
+
 
 app.post('/signup', function(req, res){
     // this user object has a plain-text password

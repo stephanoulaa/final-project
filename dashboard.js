@@ -1,7 +1,11 @@
-//var Client = require('coinbase').Client;
-//var client = new Client({'G4vOdFYJqQGSfhzn': 'API KEY', 
-//                         'xEJDITgXKCR70L4pfXJCxE0Pz8WUcomJ': 'API SECRET'});
-//
-//client.getExchangeRates({'currency': 'BTC'}, function(err, rates) {
-//  console.log(rates);
+//$(document).ready(function(){
+//    
+//    $.get('https://coinmap.org/api/v1/venues/', function(){
+//        console.log(data);
+//    })
+//    
+//    $.get('/https://api.coinbase.com/v2/exchange-rates', function(){
+//        console.log(data);  
+//    })
+//      
 //});
