@@ -25,6 +25,17 @@ body {
   background-color: cornflowerblue;
 }
 
+#validate {
+    float: right;
+    position: absolute;
+    right: 50px;
+    top: 45px;
+}
+
+#link {
+    color: black;
+}
+
 .footer {
     border: 15px solid cornflowerblue;
     background-color: cornflowerblue;

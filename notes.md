@@ -14,8 +14,7 @@
 9/13-9/15: 
 -link JS file (or contract) to wishlist
 9/16-9/17:
--put in logout button
--extra styling/responsive
+-extra styling
 -make bit bag bigger
 9/18: 
 -help deploying it
@@ -23,6 +22,7 @@
 
 
                                     **FORMATTING**
+                                    
 =====================================================================================
                 W E L C O M E   T O   Y O U R   D A S H B O A R D
 
