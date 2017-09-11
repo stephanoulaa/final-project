@@ -11,6 +11,7 @@ https://developers.coinbase.com/docs/wallet/guides/price-data
 -link JS file (or contract) to wishlist
 9/14:
 -extra styling
+-add link to coinmap, etc
 -make bit bag bigger
 9/15: 
 -help deploying it

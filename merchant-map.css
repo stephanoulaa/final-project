@@ -36,6 +36,15 @@ body {
     color: black;
 }
 
+
+#header2 {
+    font-family: "Courier New";
+    text-align: center;
+    color: cornflowerblue;
+    border: 25px solid wheat;
+    background-color: wheat;
+}
+
 .footer {
     border: 15px solid cornflowerblue;
     background-color: cornflowerblue;
