@@ -86,34 +86,59 @@ app.get('/session-test', function(req, res){
     res.send('session counter: ' + req.session.counter)
 })
 
+//===============================================================================
 //COINBASE API - EXCHANGE RATE
 var Client = require('coinbase').Client;
 var client = new Client({'apiKey': 'JGGtZvJTVqlqBLXW', 
                          'apiSecret': '1ySK2pjOSYeZN2md9qax601NiqmOGMKv'});
 
-function getExchangeRate(){
+function getExchangeRate(req, res){
 //    console.log("hello");
     client.getExchangeRates({'currency': 'BTC'}, function(err, rates) {
         console.log(rates);
+        res.send(rates)
     })
 }
-getExchangeRate();
-//do i need this to send data up to frontend?
-//app.get('/exchange_rate', function(req, res){
-//    request('https://api.coinbase.com/v2/exchange-rates',
-//    function (error, response, body) {
-//        console.log('error: ', error)
-//        console.log('body:', body); 
-//        res.send(body); 
-//    });
-//    
-//})
-
+//then send data up to frontend...
+app.get('/exchange', function(req, res){
+    getExchangeRate(req, res);
+    
+})
+//===============================================================================
 //COINBASE API - BUYING PRICE
+var Client = require('coinbase').Client;
+var client = new Client({'apiKey': 'JGGtZvJTVqlqBLXW',
+                         'apiSecret': '1ySK2pjOSYeZN2md9qax601NiqmOGMKv'});
 
+function getBuyPrice(req, res){
+    client.getBuyPrice({'currencyPair': 'BTC-USD'}, function(err, price) {
+      console.log(price);
+      res.send(price)
+    });
+}
+//then send data up to frontend...
+app.get('/buy', function(req, res){
+    getBuyPrice(req, res);
+    
+})
+//===============================================================================
 //COINBASE API - SELLING PRICE
+var Client = require('coinbase').Client;
+var client = new Client({'apiKey': 'JGGtZvJTVqlqBLXW',
+                         'apiSecret': '1ySK2pjOSYeZN2md9qax601NiqmOGMKv'});
 
-
+function getSellPrice(req, res){
+    client.getSellPrice({'currencyPair': 'BTC-USD'}, function(err, price) {
+      console.log(price);
+      res.send(price)
+    });
+}
+//then send data up to frontend...
+app.get('/sell', function(req, res){
+    getSellPrice(req, res);
+    
+})
+//==============================================================================
 
 app.post('/signup', function(req, res){
     // this user object has a plain-text password

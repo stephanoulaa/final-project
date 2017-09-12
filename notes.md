@@ -1,14 +1,11 @@
 ****SCHEDULE****
 
 9/12: 
--help on Coinbase API:
-https://developers.coinbase.com/api/v2#get-currencies 
-https://developers.coinbase.com/docs/wallet/guides/price-data
+-if statements for exchange rate/buy price/sell price
 9/13:
--link JS file (or contract) to wishlist
-9/14:
--extra styling
 -add markers to google map/coinmap
+9/14:
+-style dashboard, etc
 -make bit bag bigger
 9/15: 
 -help deploying it
@@ -43,6 +40,9 @@ HOME    WISHLIST   MERCHANT MAP   QUESTIONS?
 
 
 HOME - dashboard, display bitcoin rate w/graphs from coinbase
+helpful links:
+https://developers.coinbase.com/api/v2#get-currencies 
+https://developers.coinbase.com/docs/wallet/guides/price-data
 
 WISHLIST - make to-do list type of thing with stuff you want
 

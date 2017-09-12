@@ -45,6 +45,20 @@ body {
     color: black;
 }
 
+
+#exchange {
+    text-align: center;
+}
+
+#buyPrice {
+    text-align: center;
+}
+
+#sellPrice {
+    text-align: center;
+}
+
+
 .footer {
     border: 15px solid cornflowerblue;
     background-color: cornflowerblue;
