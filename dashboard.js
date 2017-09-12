@@ -31,6 +31,17 @@ $(document).ready(function() {
         $('#sellPrice').append(data.data.amount)
     });
     
+    //FIX THIS
+    if (asteroid.is_potentially_hazardous_asteroid) {
+                $('#header1').text(asteroidDate)
+                $('#asteroid-name').append('<div id=asteroid-name><p>Asteroid Name: ' + asteroid.name + '</p></div>');
+                $('#asteroid-vel').append('<div id=asteroid-vel><p>Velocity: ' + asteroid.close_approach_data[0].relative_velocity.miles_per_hour + ' miles per hour</p></div>');
+                $('#asteroid-diam').append('<div id=asteroid-diam><p>Max Diameter: ' + asteroid.estimated_diameter.feet.estimated_diameter_max + ' feet</p></div><br>');
+                $('#asteroid-dist').append('<div id=asteroid-dist><p>Distance from Earth (mi): ' + asteroid.close_approach_data[0].miss_distance.miles + '</p></div>');
+            } else if (asteroid.is_potentially_hazardous_asteroid == false) {
+                $('#headerElse').text(``)
+            } //end of if/else statements
+    
     
     //var exchangeRate = data.data.rates.USD;
     //console.log(data.data.rates.USD);
