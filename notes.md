@@ -1,17 +1,14 @@
 ****SCHEDULE****
 
-9/11:
--add markers to maps API
 9/12: 
 -help on Coinbase API:
 https://developers.coinbase.com/api/v2#get-currencies 
 https://developers.coinbase.com/docs/wallet/guides/price-data
--work on smart contract stuff
 9/13:
 -link JS file (or contract) to wishlist
 9/14:
 -extra styling
--add link to coinmap, etc
+-add markers to google map/coinmap
 -make bit bag bigger
 9/15: 
 -help deploying it
