@@ -1,13 +1,7 @@
 ****SCHEDULE****
 
 9/12: 
--if statements for exchange rate/buy price/sell price
--look at jimmy song stuff, writer, bitcoin trading
--add in these alerts:
-if above 4900 - record-breaking, sell as much as 40% of your wallet
-if above 4500 - don't sell more than 15% of what's in your wallet
-if below 4000 - if you're feeling conservative, buy $100 worth of bitcoin 
-if below 3700 - buy about $200 worth of bitcoin
+-check accuracy of alerts with Jimmy Song stuff
 9/13:
 -try to get coinbase graph on dashboard (web scraping?)
 -fix and add markers to google map/coinmap
