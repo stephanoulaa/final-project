@@ -5,6 +5,7 @@ var request = require('request');
 var mongoose = require('mongoose')
 var bcrypt = require('bcryptjs')
 var sessionsModule = require('client-sessions')
+var Twitter = require('twitter');
 
 mongoose.connect('mongodb://localhost/final-proj', function(mongooseErr) {
     if( mongooseErr ) { console.error(mongooseErr) } 
@@ -139,6 +140,34 @@ app.get('/sell', function(req, res){
     
 })
 //==============================================================================
+
+//Twitter stuff...
+
+//var client = new Twitter({
+//  consumer_key: process.env.qibW1o9nynrYhVZrm1nlQmGuY,
+//  consumer_secret: process.env.TpFwKG5mjNz0g5YaCZ2SDXsrA9wtDTJTW8Ei7FATPGUt7CYsoG,
+//  access_token_key: process.env.Kkj1AB0sQTpC7lHRpVnx2taMtzycmY,
+//  access_token_secret: process.env.Cgrx85qO5wNtKIFBJ5rWm0xvYKUzo4de9PgpH3qdFA19G
+//});
+//
+///**
+// * Stream statuses filtered by keyword
+// * number of tweets per second depends on topic popularity
+// **/
+//client.stream('statuses/filter', {track: 'bitcoin'},  function(stream) {
+//  stream.on('data', function(tweet) {
+//    console.log(tweet.text);
+//  });
+//
+//  stream.on('error', function(error) {
+//    console.log(error);
+//  });
+//});
+
+
+
+//==============================================================================
+
 
 app.post('/signup', function(req, res){
     // this user object has a plain-text password

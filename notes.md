@@ -1,14 +1,16 @@
 ****SCHEDULE****
 
-9/12: 
--check accuracy of alerts with Jimmy Song stuff
-9/13:
+9/13: 
+-stream bitcoin articles (see twitternotes.md)
+-add accurate alerts (Jimmy Song, cryptowat.ch, bitcoincharts.com, bitcointicker.co)
 -try to get coinbase graph on dashboard (web scraping?)
--fix and add markers to google map/coinmap
 9/14:
+-coinmap API?
+-fix and add markers to map
+9/15:
 -style dashboard, etc
 -make bit bag bigger
-9/15: 
+9/18: 
 -help deploying it
 
 

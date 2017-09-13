@@ -25,12 +25,12 @@ $(document).ready(function() {
         }
         //if above 4000 - decent time to buy some bitcoin, maybe about 100 dollars worth of it
         if (data.data.rates.USD >= 4000) {
-            $('#alert4500above').show();
+            $('#alert4000above').show();
         } else {
-            $('#alert4500above').hide();
+            $('#alert4000above').hide();
         }
-        //if below 4000 - if you're feeling conservative, buy $100 worth of bitcoin 
-        if (data.data.rates.USD <= 4000) {
+        //if 4000 or below - if you're feeling conservative, buy $100 worth of bitcoin 
+        if (data.data.rates.USD < 4000) {
             $('#alert4000').show();
         } else {
             $('#alert4000').hide();
@@ -58,20 +58,17 @@ $(document).ready(function() {
         $('#sellPrice').append(data.data.amount)
     });
     
-    //FIX THIS
-//    if (asteroid.is_potentially_hazardous_asteroid) {
-//                $('#header1').text(asteroidDate)
-//                $('#asteroid-name').append('<div id=asteroid-name><p>Asteroid Name: ' + asteroid.name + '</p></div>');
-//                $('#asteroid-vel').append('<div id=asteroid-vel><p>Velocity: ' + asteroid.close_approach_data[0].relative_velocity.miles_per_hour + ' miles per hour</p></div>');
-//                $('#asteroid-diam').append('<div id=asteroid-diam><p>Max Diameter: ' + asteroid.estimated_diameter.feet.estimated_diameter_max + ' feet</p></div><br>');
-//                $('#asteroid-dist').append('<div id=asteroid-dist><p>Distance from Earth (mi): ' + asteroid.close_approach_data[0].miss_distance.miles + '</p></div>');
-//            } else if (asteroid.is_potentially_hazardous_asteroid == false) {
-//                $('#headerElse').text(``)
-//            } //end of if/else statements
-    
- 
-    
-    
-    
+
                                                 
 }); //end of $(document).ready
+
+
+//
+//
+//    twttr.widgets.createTimeline(
+//  {
+//    sourceType: "profile",
+//    screenName: "Coindesk"
+//  },
+//  document.getElementById("container")
+//);
