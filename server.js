@@ -90,8 +90,8 @@ app.get('/session-test', function(req, res){
 //===============================================================================
 //COINBASE API - EXCHANGE RATE
 var Client = require('coinbase').Client;
-var client = new Client({'apiKey': 'JGGtZvJTVqlqBLXW', 
-                         'apiSecret': '1ySK2pjOSYeZN2md9qax601NiqmOGMKv'});
+var client = new Client({'apiKey': 'API-KEY', 
+                         'apiSecret': 'API-SECRET'});
 
 function getExchangeRate(req, res){
 //    console.log("hello");
@@ -108,8 +108,8 @@ app.get('/exchange', function(req, res){
 //===============================================================================
 //COINBASE API - BUYING PRICE
 var Client = require('coinbase').Client;
-var client = new Client({'apiKey': 'JGGtZvJTVqlqBLXW',
-                         'apiSecret': '1ySK2pjOSYeZN2md9qax601NiqmOGMKv'});
+var client = new Client({'apiKey': 'API-KEY',
+                         'apiSecret': 'API-SECRET'});
 
 function getBuyPrice(req, res){
     client.getBuyPrice({'currencyPair': 'BTC-USD'}, function(err, price) {
@@ -125,8 +125,8 @@ app.get('/buy', function(req, res){
 //===============================================================================
 //COINBASE API - SELLING PRICE
 var Client = require('coinbase').Client;
-var client = new Client({'apiKey': 'JGGtZvJTVqlqBLXW',
-                         'apiSecret': '1ySK2pjOSYeZN2md9qax601NiqmOGMKv'});
+var client = new Client({'apiKey': 'API-KEY',
+                         'apiSecret': 'API-SECRET'});
 
 function getSellPrice(req, res){
     client.getSellPrice({'currencyPair': 'BTC-USD'}, function(err, price) {
@@ -144,10 +144,10 @@ app.get('/sell', function(req, res){
 //Twitter stuff...
 
 //var client = new Twitter({
-//  consumer_key: process.env.qibW1o9nynrYhVZrm1nlQmGuY,
-//  consumer_secret: process.env.TpFwKG5mjNz0g5YaCZ2SDXsrA9wtDTJTW8Ei7FATPGUt7CYsoG,
-//  access_token_key: process.env.Kkj1AB0sQTpC7lHRpVnx2taMtzycmY,
-//  access_token_secret: process.env.Cgrx85qO5wNtKIFBJ5rWm0xvYKUzo4de9PgpH3qdFA19G
+//  consumer_key: process.env.consumer_key,
+//  consumer_secret: process.env.consumer_secret,
+//  access_token_key: process.env.access_token_key,
+//  access_token_secret: process.env.access_token_secret
 //});
 //
 ///**
