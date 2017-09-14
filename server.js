@@ -6,6 +6,7 @@ var mongoose = require('mongoose')
 var bcrypt = require('bcryptjs')
 var sessionsModule = require('client-sessions')
 var Twitter = require('twitter');
+var secrets = require('./secrets.js');
 
 mongoose.connect('mongodb://localhost/final-proj', function(mongooseErr) {
     if( mongooseErr ) { console.error(mongooseErr) } 
@@ -90,8 +91,8 @@ app.get('/session-test', function(req, res){
 //===============================================================================
 //COINBASE API - EXCHANGE RATE
 var Client = require('coinbase').Client;
-var client = new Client({'apiKey': 'API-KEY', 
-                         'apiSecret': 'API-SECRET'});
+var client = new Client({'apiKey': 'coinbase_key', 
+                         'apiSecret': 'coinbase_secret'});
 
 function getExchangeRate(req, res){
 //    console.log("hello");
@@ -108,8 +109,8 @@ app.get('/exchange', function(req, res){
 //===============================================================================
 //COINBASE API - BUYING PRICE
 var Client = require('coinbase').Client;
-var client = new Client({'apiKey': 'API-KEY',
-                         'apiSecret': 'API-SECRET'});
+var client = new Client({'apiKey': 'coinbase_key',
+                         'apiSecret': 'coinbase_secret'});
 
 function getBuyPrice(req, res){
     client.getBuyPrice({'currencyPair': 'BTC-USD'}, function(err, price) {
@@ -125,8 +126,8 @@ app.get('/buy', function(req, res){
 //===============================================================================
 //COINBASE API - SELLING PRICE
 var Client = require('coinbase').Client;
-var client = new Client({'apiKey': 'API-KEY',
-                         'apiSecret': 'API-SECRET'});
+var client = new Client({'apiKey': 'coinbase_key',
+                         'apiSecret': 'coinbase_secret'});
 
 function getSellPrice(req, res){
     client.getSellPrice({'currencyPair': 'BTC-USD'}, function(err, price) {
@@ -144,10 +145,10 @@ app.get('/sell', function(req, res){
 //Twitter stuff...
 
 //var client = new Twitter({
-//  consumer_key: process.env.consumer_key,
-//  consumer_secret: process.env.consumer_secret,
-//  access_token_key: process.env.access_token_key,
-//  access_token_secret: process.env.access_token_secret
+//  consumer_key: process.env.twitter_consumer_key,
+//  consumer_secret: process.env.twitter_consumer_secret,
+//  access_token_key: process.env.twitter_access_token_key,
+//  access_token_secret: process.env.twitter_access_token_secret
 //});
 //
 ///**
