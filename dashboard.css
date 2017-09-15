@@ -6,8 +6,8 @@ body {
 #header {
     text-align: center;
     font-family: "Courier New";
-    border: 25px solid skyblue;
-    background-color: skyblue;
+    border: 25px solid lightcoral;
+    background-color: lightcoral;
     letter-spacing: 4px;
 }
 
@@ -83,8 +83,9 @@ body {
 
 
 .footer {
-    border: 15px solid cornflowerblue;
-    background-color: cornflowerblue;
+    border: 15px solid palevioletred;
+    background-color: palevioletred;
+    
 }
 
 .powered-by {
