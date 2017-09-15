@@ -1,7 +1,6 @@
 ****SCHEDULE****
 
 9/15: 
--get graph on dashboard (see: graph.js, dashboard.js, dashboard.html)
 -try coinmap api (https://coinmap.org/api/)
 -try streaming twitter coindesk (see: twitternotes.md)
 9/16:

@@ -60,7 +60,12 @@ body {
 
 
 /*GRAPH*/
-
+.chart {
+    height: 80%;
+    width: 80%;
+    padding-left: 320px;
+    padding-top: 50px;
+}
 /*GRAPH*/
 
 
