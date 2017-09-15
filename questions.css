@@ -1,5 +1,5 @@
 body {
-    background-color: aliceblue;
+    background-color: whitesmoke;
 }
 
 #header {
@@ -41,10 +41,16 @@ body {
     margin-right: 100px;
     text-align: center;
     padding-top: 75px;
+    padding-bottom: 25px;
+}
+
+.row {
+    border: 3px double goldenrod;
+    padding-top: 20px;
 }
 
 .column2 {
-    border: 3px double goldenrod;
+/*    border: 3px double goldenrod;*/
     padding-top: 15px;
     padding-bottom: 15px;
 }

@@ -1,5 +1,6 @@
 body {
-    background-color: aliceblue;
+    background-color: whitesmoke;
+    position: relative;
 }
 
 #header {
@@ -47,26 +48,38 @@ body {
 
 
 #exchange {
-    text-align: center;
+    padding-left: 130px;
+    font-family: "Courier New";
+    font-weight: bold;
+    padding-top: 25px;
 }
 
 #buyPrice {
-    text-align: center;
+    padding-left: 130px;
+    font-family: "Courier New";
 }
 
 #sellPrice {
-    text-align: center;
+    padding-left: 130px;
+    font-family: "Courier New";
+/*    padding-bottom: 5px;*/
 }
 
-
-/*GRAPH*/
 .chart {
-    height: 80%;
-    width: 80%;
-    padding-left: 320px;
+/*    border-top: 8px double mediumpurple;*/
+    height: 60%;
+    width: 60%;
+    padding-left: 120px;
     padding-top: 50px;
 }
-/*GRAPH*/
+
+
+.twitter {
+    position: absolute;
+    text-align: right;
+    bottom: 75px;
+    right: 35px;
+}
 
 
 .footer {

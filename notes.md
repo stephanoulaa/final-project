@@ -2,7 +2,6 @@
 
 9/15: 
 -try coinmap api (https://coinmap.org/api/)
--try streaming twitter coindesk (see: twitternotes.md)
 9/16:
 -fix and add markers to map
 -fix accuracy of alerts

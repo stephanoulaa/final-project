@@ -123,7 +123,7 @@ app.get('/buy', function(req, res){
     getBuyPrice(req, res);
     
 })
-//===============================================================================
+
 //COINBASE API - SELLING PRICE
 var Client = require('coinbase').Client;
 var client = new Client({'apiKey': 'coinbase_key',
@@ -140,43 +140,6 @@ app.get('/sell', function(req, res){
     getSellPrice(req, res);
     
 })
-//==============================================================================
-
-//Twitter stuff...
-
-//var client = new Twitter({
-//  consumer_key: process.env.twitter_consumer_key,
-//  consumer_secret: process.env.twitter_consumer_secret,
-//  access_token_key: process.env.twitter_access_token_key,
-//  access_token_secret: process.env.twitter_access_token_secret
-//});
-//
-///**
-// * Stream statuses filtered by keyword
-// * number of tweets per second depends on topic popularity
-// **/
-//function getCoindesk(req, res){
-//client.stream('statuses/filter', {track: 'bitcoin'},  function(stream) {
-//  stream.on('data', function(tweet) {
-//    console.log(tweet.text);
-//    res.send(tweet.text);
-//  });
-//
-//  stream.on('error', function(error) {
-//    console.log(error);
-//  });
-//    
-//});
-//}
-//
-////then send data up to frontend...
-//app.get('/twitter', function(req, res){
-//    getCoindesk(req, res);
-//    
-//})
-
-//==============================================================================
-
 
 app.post('/signup', function(req, res){
     // this user object has a plain-text password
