@@ -1,15 +1,13 @@
 ****SCHEDULE****
 
-9/13: 
--stream bitcoin articles (see twitternotes.md)
--add accurate alerts (Jimmy Song, cryptowat.ch, bitcoincharts.com, bitcointicker.co)
--try to get coinbase graph on dashboard (web scraping?)
-9/14:
--coinmap API?
+9/15: 
+-get graph on dashboard (see: graph.js, dashboard.js, dashboard.html)
+-try coinmap api (https://coinmap.org/api/)
+-try streaming twitter coindesk (see: twitternotes.md)
+9/16:
 -fix and add markers to map
-9/15:
--style dashboard, etc
--make bit bag bigger
+-fix accuracy of alerts
+-style: dashboard, bit bag, alerts, etc
 9/18: 
 -help deploying it
 

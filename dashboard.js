@@ -4,7 +4,11 @@ $(document).ready(function() {
 //        console.log(data);
 //    })
 
-
+    
+    //DO I NEED THIS?????
+    $.get('/graph', function(data){
+        ctx.show();
+    })
 
     $.get('/exchange', function(data) {
         console.log(data)
@@ -17,29 +21,53 @@ $(document).ready(function() {
         } else {
             $('#alert4900').hide();
         }
-        //if above 4500 - don't sell more than 15% of what's in your wallet
-        if (data.data.rates.USD >= 4500) {
-            $('#alert4500').show();
+        //if between 4500 and 4900 - don't sell more than 15% of what's in your wallet
+        if ((data.data.rates.USD >= 4500) && (data.data.rates.USD < 4900)) {
+            $('#alert4500_4900').show();
         } else {
-            $('#alert4500').hide();
+            $('#alert4500_4900').hide();
         }
-        //if above 4000 - decent time to buy some bitcoin, maybe about 100 dollars worth of it
-        if (data.data.rates.USD >= 4000) {
-            $('#alert4000above').show();
+        //if between 4000 and 4500 - decent time to buy some bitcoin, maybe about 100 dollars worth of it
+        if ((data.data.rates.USD >= 4000) && (data.data.rates.USD < 4500)) {
+            $('#alert4000_4500').show();
         } else {
-            $('#alert4000above').hide();
+            $('#alert4000_4500').hide();
         }
-        //if 4000 or below - if you're feeling conservative, buy $100 worth of bitcoin 
-        if (data.data.rates.USD < 4000) {
-            $('#alert4000').show();
+        //if between 3700 and 4000 - if you're feeling conservative, buy $100 worth of bitcoin 
+        if ((data.data.rates.USD >= 3700) && (data.data.rates.USD < 4000)) {
+            $('#alert3700_4000').show();
         } else {
-            $('#alert4000').hide();
+            $('#alert3700_4000').hide();
         }
-        //if below 3700 - buy about $200 worth of bitcoin
-        if (data.data.rates.USD <= 3700) {
-            $('#alert3700').show();
+        //if between 3400 and 3700 - buy about $200 worth of bitcoin
+        if ((data.data.rates.USD >= 3400) && (data.data.rates.USD < 3700)) {
+            $('#alert3400_3700').show();
         } else {
-            $('#alert3700').hide();
+            $('#alert3400_3700').hide();
+        }
+        //if between 3000 and 3400 - buy about $300 worth of bitcoin
+        if ((data.data.rates.USD >= 3000) && (data.data.rates.USD < 3400)) {
+            $('#alert3000_3400').show();
+        } else {
+            $('#alert3000_3400').hide();
+        }
+        //if between 2500 and 3000 - buy about $300 worth of bitcoin
+        if ((data.data.rates.USD >= 2500) && (data.data.rates.USD < 3000)) {
+            $('#alert2500_3000').show();
+        } else {
+            $('#alert2500_3000').hide();
+        }
+        //if between 2000 and 2500 - buy about $400 worth of bitcoin
+        if ((data.data.rates.USD >= 2000) && (data.data.rates.USD < 2500)) {
+            $('#alert2000_2500').show();
+        } else {
+            $('#alert2000_2500').hide();
+        }
+        //if below 2000 - buy about $400 worth of bitcoin
+        if (data.data.rates.USD < 2000) {
+            $('#alert2000').show();
+        } else {
+            $('#alert2000').hide();
         }
     });
     
@@ -57,18 +85,5 @@ $(document).ready(function() {
         console.log('Current Sell Price: ', data.data.amount)
         $('#sellPrice').append(data.data.amount)
     });
-    
-
                                                 
 }); //end of $(document).ready
-
-
-//
-//
-//    twttr.widgets.createTimeline(
-//  {
-//    sourceType: "profile",
-//    screenName: "Coindesk"
-//  },
-//  document.getElementById("container")
-//);

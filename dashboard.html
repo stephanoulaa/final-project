@@ -1,29 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="VideoTweetStream">
     <head>
-        <!--from twitter-->
+        <!--graph thing-->
 <!--
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css' />
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.0/handlebars.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/pubnub/3.6.3/pubnub.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.1.8/imagesloaded.pkgd.min.js"></script>
-        <script>
-			var pubnub = PUBNUB.init({
-				subscribe_key: 'sub-c-78806dd4-42a6-11e4-aed8-02ee2ddab7fe'
-			});
-			pubnub.subscribe({
-				channel : 'pubnub-twitter',
-				message : function(tweet){
-					$('#tweet-list').prepend('<li class="list-group-item">' + tweet.text + '</li>');
-					if($('#tweet-list li').length > 10) {
-						$('#tweet-list li').last().remove();
-					}
-				}
-			});
-        </script>
+        <meta name="viewport" content="width=1024">
 -->
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -32,9 +13,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
         <link rel="shortcut icon" type="image/png" href="image/sigma.png">
     </head>
-    <!--from twitter-->
-<!--    goes in body...-->
-<!--    role="document"-->
     <body>
         
         <div>
@@ -55,17 +33,29 @@
         
         
         <!--display coinbase's graphs/rates for bitcoin to USD everyday-->
-        <div class="alert alert-warning" role="alert" id="alert3700">
-            <p><strong>Below $3700 Today!</strong> Bitcoin is looking a little low today, so be sure to buy about $200 worth of Bitcoin today!</p>
+        <div class="alert alert-warning" role="alert" id="alert2000">
+            <p><strong>Wow, Below $2000 Today!</strong> Bitcoin is looking a little low today, in fact the lowest it's been in about a year. Be sure to buy about $200 worth of Bitcoin today!</p>
         </div>
-        <div class="alert alert-warning" role="alert" id="alert4000">
-            <p><strong>Below $4000 Today!</strong> The exchange price has dropped below 4000 today, so if you're feeling conservative, buy about $100 worth of Bitcoin.</p>
+        <div class="alert alert-warning" role="alert" id="alert2000_2500">
+            <p><strong>Between $2000 and $2500 Today!</strong> Bitcoin is looking a little low today, so be sure to buy about $50 worth of Bitcoin today!</p>
         </div>
-        <div class="alert alert-warning" role="alert" id="alert4000above">
-            <p><strong>Above $4000 Today!</strong> It's a decent time to buy and sell Bitcoin, maybe think about buying $50 to $100 worth of Bitcoin.</p>
+        <div class="alert alert-warning" role="alert" id="alert2500_3000">
+            <p><strong>Between $2500 and $3000 Today!</strong> Bitcoin is looking pretty low again today, seems to be a trend. Consider buying about $50 worth of Bitcoin today!</p>
         </div>
-        <div class="alert alert-info" role="alert" id="alert4500">
-            <p><strong>Bitcoin is one the rise!</strong> $4500 is a lot of money,so make sure to sell today, but definitely not more than 15% of what is currently in your wallet!</p>
+        <div class="alert alert-warning" role="alert" id="alert3000_3400">
+            <p><strong>Between $3000 and $3400 Today!</strong> We have broke into the 3000s today, Bitcoin is on the rise! Consider buying about $150 worth of Bitcoin today!</p>
+        </div>
+        <div class="alert alert-warning" role="alert" id="alert3400_3700">
+            <p><strong>Between $3400 and $3700 Today!</strong> Bitcoin is looking a little low today, so be sure to buy about $100 worth of Bitcoin today or whatever seems reasonable for what is in your personal wallet!</p>
+        </div>
+        <div class="alert alert-warning" role="alert" id="alert3700_4000">
+            <p><strong>Between $3700 and $4000 Today!</strong> The exchange price is closely approaching 4000 today, so if you're feeling conservative, consider buying about $50 worth of Bitcoin.</p>
+        </div>
+        <div class="alert alert-warning" role="alert" id="alert4000_4500">
+            <p><strong>Above $4000 But Below $4500 Today!</strong> Although the exchange price is looking a little high today, it's still a decent time to buy and sell Bitcoin, so consider buying $50 to $100 worth of Bitcoin.</p>
+        </div>
+        <div class="alert alert-info" role="alert" id="alert4500_4900">
+            <p><strong>Bitcoin is one the rise!</strong> Anythin between $4500 and $4900 is a lot of money,so make sure to sell today, but definitely not more than 15% of what is currently in your wallet!</p>
         </div>
         <div class="alert alert-success" role="alert" id="alert4900">
             <p><strong>A Record-Breaking Exchange Rate!</strong> The most the USD rate for Bitcoin has ever reached is approximately 4900. It looks like this has happened once again. So make sure to sell lots of your bitcoin today, but not more than 40% of what's in your wallet currently.</p>
@@ -75,30 +65,10 @@
         <h1 id="buyPrice">Current Buying Price: $</h1>
         <h1 id="sellPrice">Current Selling Price: $</h1>
         
-        
-        
-        
-        <!--from twitter-->
-<!--
-        <div class="container" role="main" style="margin-top: 20px;">
-    	<div class="panel panel-primary">
-			  <div class="panel-heading">PubNub Twitter Stream Demo</div>
-			  <div class="panel-body">
-			  	<p>
-			  	This is a client-side only application.
-			  	It consumes a <a href="https://dev.twitter.com/streaming/reference/post/statuses/filter" target="_blank">statuses/filter</a>
-			  	that is hosted by <a href="http://www.pubnub.com/developers/data-streams/twitter-stream" target="_blank">PubNub</a>.
-			  	</p>
 
-			  	<p>To setup your own hosted Twitter stream see this <a href="https://gist.github.com/stephenlb/36aef15a165d5bad0d82" target="_blank">gist</a>.
+      <!--graph??-->
 
-			  </div>
-			  <ul id="tweet-list" class="list-group">
-			    <li class="list-group-item">Waiting for Tweets . . .</li>
-			  </ul>
-			</div>
-        </div>
--->
+        <canvas id="line-chart"></canvas>
         
         
         
@@ -114,7 +84,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="dashboard.js"></script>
-        <!--from twitter-->
-<!--        <script src="stream.js"></script>-->
+        <script src="graph.js"></script>
     </body>
 </html>

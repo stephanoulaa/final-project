@@ -155,17 +155,25 @@ app.get('/sell', function(req, res){
 // * Stream statuses filtered by keyword
 // * number of tweets per second depends on topic popularity
 // **/
+//function getCoindesk(req, res){
 //client.stream('statuses/filter', {track: 'bitcoin'},  function(stream) {
 //  stream.on('data', function(tweet) {
 //    console.log(tweet.text);
+//    res.send(tweet.text);
 //  });
 //
 //  stream.on('error', function(error) {
 //    console.log(error);
 //  });
+//    
 //});
-
-
+//}
+//
+////then send data up to frontend...
+//app.get('/twitter', function(req, res){
+//    getCoindesk(req, res);
+//    
+//})
 
 //==============================================================================
 
