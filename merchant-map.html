@@ -7,12 +7,14 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
         <link rel="shortcut icon" type="image/png" href="image/sigma.png">
         <!--GOOGLE MAPS API-->
+<!--
         <style>
            #map {
             height: 400px;
             width: 100%;
            }
         </style>
+-->
     </head>
     <body>
         
@@ -31,15 +33,16 @@
         </div>
         
         
+        <h3 class="header2">Click Below to See A Map of Companies That Accept Bitcoin!</h3>
         
+        <a href="https://coinmap.org/#/world/39.36827915/48.16406250/2" target="_blank"><img id="coinmap" src="image/coinmap.png"/></a>
         
-        <!--get coinmap's API to display map-->
-        <h3 id="header2">See what Companies Accept Bitcoin all over the country...</h3>
-            <div id="map"></div>
+        <!--get bitcoin atm API to display map-->
+        <h3 class="header2">See Where You Can Obtain Bitcoin All Around the World...</h3>
+<!--            <div id="map"></div>-->
+        <!--FOR REFERENCE: A bitcoin ATM is an internet machine that allows a person to exchange bitcoins and cash. ... Bitcoin kiosks are machines which are connected to the Internet, allowing the insertion of cash in exchange for bitcoins given as a paper receipt or by moving money to a public key on the blockchain.-->
         
-        
-        
-        
+        <iframe id='map' src="https://fusiontables.googleusercontent.com/embedviz?q=select+col2+from+1FMcb8caPPj_XKmdX0OUtq5WJgYREpa9LqEZvNYM&viz=MAP&h=false&lat=17.381120794655&lng=13.576324266932&t=1&z=2&l=col2&y=2&tmplt=2&hml=GEOCODABLE"></iframe>
         
         
         <footer class="footer">
@@ -52,6 +55,7 @@
         
         
         <!--GOOGLE MAPS API-->
+<!--
         <script>
               function initMap() {
                   var autowerks = {lat: 40.0189615, lng: -105.2632795}
@@ -132,6 +136,7 @@
             <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCr0HVHd5WZb3eQ5I4-zxJm0VhlY1XjXGU&callback=initMap">
             </script>
+-->
         <!--^^GOOGLE MAPS API^^-->
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

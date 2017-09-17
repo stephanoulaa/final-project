@@ -1,12 +1,8 @@
 ****SCHEDULE****
 
-9/15: 
--try coinmap api (https://coinmap.org/api/)
-9/16:
--fix and add markers to map
--maybe add bitcoin atm map
+9/17:
 -fix accuracy of alerts
--style: dashboard, bit bag, alerts, fix logout button, apply rgba on header/footer
+-style: bit bag, alerts, apply rgba on header/footer
 9/18: 
 -help deploying it
 
