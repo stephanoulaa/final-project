@@ -1,9 +1,9 @@
 ****SCHEDULE****
 
-9/17:
--fix accuracy of alerts
--style: bit bag, alerts, apply rgba on header/footer
 9/18: 
+-fix accuracy of alerts
+-how to save what's in wishlist
+9/19: 
 -help deploying it
 
 

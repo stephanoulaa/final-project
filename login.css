@@ -1,33 +1,30 @@
 body {
-    background-color: aliceblue;
+    background: linear-gradient(to bottom right, royalblue, skyblue);
 }
 
+
 .row {
-    margin-left: 225px;
-    padding-top: 10px;
+    margin-left: 215px;
+    padding-top: 50px; 
+    color: black;
+    font-family: "Andale Mono";
 }
 
 .headers {
+    color: black;
+    font-family: "Andale Mono";
     text-align: center;
-    border: 15px solid lightblue;
-    background-color: lightblue;
 }
 
 .image {
     text-align: center;
 }
 
-#blockchain {
-    height: 35%;
-    width: 35%;
-    opacity: .4;
-    border: 15px solid greenyellow;
-    background-color: greenyellow;
-}
-
-.footer {
-    padding-top: 100px;
-    border: 15px solid greenyellow;
-    background-color: greenyellow;
-    opacity: .4;
+#world {
+    height: 100%;
+    width: 100%;
+    opacity: .9;
+    z-index:-1;
+    position: relative;
+    bottom: 300px;
 }

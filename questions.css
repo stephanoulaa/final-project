@@ -1,13 +1,16 @@
 body {
-    background-color: whitesmoke;
+    background-color: thistle;
 }
 
 #header {
     text-align: center;
     font-family: "Courier New";
+/*
     border: 25px solid lightcoral;
     background-color: lightcoral;
+*/
     letter-spacing: 4px;
+    padding-top: 25px;
 }
 
 .nav {
@@ -88,8 +91,8 @@ body {
 }
 
 .footer {
-    border: 15px solid palevioletred;
-    background-color: palevioletred;
+/*    border: 15px solid palevioletred;*/
+/*    background-color: palevioletred;*/
 }
 
 .powered-by {
