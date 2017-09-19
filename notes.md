@@ -1,11 +1,8 @@
 ****SCHEDULE****
 
-9/18:
--start deploying
--take notes for presentation
 9/19: 
 -present for raphael
--help deploying it (can i edit afterwards?)
+-finish deployment
 
 
                                     **FORMATTING**
