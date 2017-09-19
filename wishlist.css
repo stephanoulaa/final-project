@@ -36,8 +36,7 @@ body {
 }
 
 .footer {
-/*    border: 15px solid palevioletred;*/
-/*    background-color: palevioletred;*/
+    padding-top: 30px;
 }
 
 #link {
@@ -45,13 +44,117 @@ body {
 }
 
 
-/* --------------------------TO DO LIST ==> WISH LIST----------------------------- */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400);
 
+#bit-header {
+    text-align: center;
+    padding-bottom: 50px;
+    font-family: "Courier New";
+    color: dimgray;
+}
+
+
+/*mongo to do list*/
+.form {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.doneClass {
+    text-decoration: line-through;
+}
+li button {
+    border-radius: 99999px;
+}
+
+
+ul li {
+    list-style-type: none;
+    padding-bottom: 20px;
+}
+
+#app {
+    text-align: center;
+    border: 5px solid antiquewhite;
+    background-color: antiquewhite;
+}
+
+
+#reminder {
+    padding-top: 50px;
+/*    padding-bottom: 10px;*/
+    padding-left: 70px;
+    font-family: "Courier New";
+    text-align: center;
+}
+
+#photos {
+  /* Prevent vertical gaps */
+  line-height: 0;
+   padding-top: 30px;
+    padding-left: 400px;
+  -webkit-column-count: 5;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    5;
+  -moz-column-gap:      0px;
+  column-count:         5;
+  column-gap:           0px;  
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+  opacity: .7;
+}
+
+/*
+.container {
+    padding-left: 400px;
+}
+*/
+
+/*
+#nike {
+    height: 50%;
+    width: 50%;
+}
+
+#nyc {
+    height: 50%;
+    width: 50%;
+}
+
+#cabezas {
+    height: 50%;
+    width: 50%;
+}
+
+#cheap-air {
+    height: 50%;
+    width: 50%;
+}
+
+#american {
+    height: 50%;
+    width: 50%;
+}
+
+#kalamata {
+    height: 50%;
+    width: 50%;
+}
+*/
+
+/* --------------------------TO DO LIST ==> WISH LIST----------------------------- */
+/*@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400);*/
+
+/*
 body {
     font: normal normal 13px/16px "Open Sans", sans-serif;
 }
+*/
 
+/*
 .wishlist{
     padding: 20px;
     width: 300px;
@@ -60,7 +163,9 @@ body {
     background: plum;
     border-radius: 5px;
 }
+*/
 
+/*
 .wish {
     border: 20px solid plum;
     background-color: plum;
@@ -73,7 +178,9 @@ form {
 input {
     padding: 4px 15px 4px 5px;
 }
+*/
 
+/*
 #button{
     display: inline-block;
     background-color:#fc999b;
@@ -83,9 +190,10 @@ input {
     margin-top:2px;
     padding: 5px 15px;
 }
+*/
 
+/*
 #button:hover {
-    /*when cursor is on button and pointing to it*/
     cursor: pointer;
     opacity: .8;
 }
@@ -98,9 +206,11 @@ ol li {
     padding: 5px;
     color: black;
 }
+*/
 
 /*ol li:nth-child(even){background: #dfdfdf;}*/
 
+/*
 .strike {
     text-decoration: line-through;
 }
@@ -108,6 +218,7 @@ ol li {
 li:hover {
   cursor: pointer;
  }
+*/
 
 =============================================================================
 

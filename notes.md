@@ -1,10 +1,11 @@
 ****SCHEDULE****
 
-9/18: 
--fix accuracy of alerts
--how to save what's in wishlist
+9/18:
+-start deploying
+-take notes for presentation
 9/19: 
--help deploying it
+-present for raphael
+-help deploying it (can i edit afterwards?)
 
 
                                     **FORMATTING**

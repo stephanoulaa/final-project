@@ -4,6 +4,10 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <!--my stylesheet-->
         <link rel="stylesheet" href="wishlist.css">
+        
+        <!--MONGO TO DO LIST-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.js"></script>
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
         <link rel="shortcut icon" type="image/png" href="image/sigma.png">
     </head>
@@ -29,6 +33,7 @@
         <!--to-do list type app to add/remove items-->
         <!--SOURCE: https://codepen.io/beeeees/pen/tsBwe/ -->
         <!--Even though i got the idea online, i have gone through the code thoroughly and customized it (to be a wishlist for bit bag, not a to-do list of tasks, and have made sure i understood it.-->)
+<!--
         <div class="wish">
             <div class="wishlist">
               <h2>My Bit Bag</h2>
@@ -43,21 +48,44 @@
                 <ol></ol>
             </div>
         </div>
+-->
+        
+        
+        <h1 id="bit-header">What do you want to add to your BitBag?</h1>
+
+        <!--Mongo to-do list with Vue-->
+        <div id="app">
+            <form class="form" v-on:submit="createTodo">
+                <input v-model="todoText" placeholder="New Item">
+                <input type="submit" value="Submit!">
+            </form>
+
+            <ul>
+                <!--separate vue.js statements-->
+                <li 
+                    v-on:click="markDone(todo)" 
+                    v-for="todo in todos"
+                    v-bind:class="{doneClass: todo.done}"
+                >
+                    {{todo.text}} <button v-on:click="deleteTodo(todo, $event)"><i class="glyphicon glyphicon-thumbs-up"></i></button>
+                </li>
+            </ul>
+        </div>
+        
+        <h4 id="reminder">A reminder of a few things you can buy with Bitcoin....</h4>
         
         
         
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        
-        
+         <div class="container"> 
+            <section id="photos">
+                <a href="https://www.nike.com/us/en_us/?ref=https%253A%252F%252Fwww.google.com%252F" target="_blank"><img id="nike" src="image/nike.jpg"/></a>
+                <a href="https://www.coindesk.com/new-york-preschools-accept-bitcoin-litecoin-and-ether-for-tuition-payments/" target="_blank"><img id="nyc" src="image/nyc.jpg"/></a>
+                <a href="https://www.trescabezas.de/de/" target="_blank"><img id="cabezas" src="image/cabezas.jpg"/></a>
+                <a href="https://www.cheapair.com/" target="_blank"><img id="cheap-air" src="image/cheap-air.png"/></a>
+                <a href="http://www.americanapparel.com/en/basics-shop_cat2180890" target="_blank"><img id="american" src="image/american.jpg"/></a>
+                <a href="https://www.google.com/search?q=kalamata+greece&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiQkrKsgrDWAhXIyVQKHcBfBhsQ_AUICygC&biw=1440&bih=692" target="_blank"><img id="kalamata" src="image/kalamata.png"/></a>
+             </section>
+        </div>
         
         <footer class="footer">
             <div class="container">

@@ -72,6 +72,10 @@ app.get('/', function(req, res){
     res.sendFile('./login.html', {root:'.'})
 })
 
+app.get('/', function(req, res){
+    res.sendFile('./wishlist.html', {root:'.'})
+})
+
 //so there aren't two files pointing to the home page
 //app.get('/', function(req, res){
 //    res.sendFile('./dashboard.html', {root:'.'})
@@ -87,6 +91,9 @@ app.get('/session-test', function(req, res){
     }
     res.send('session counter: ' + req.session.counter)
 })
+
+
+
 
 //===============================================================================
 //COINBASE API - EXCHANGE RATE
@@ -215,5 +222,95 @@ app.get('/logout', function(req, res){
     req.session.reset()
     res.redirect('/')
 })
+
+//MONGO TO DO LIST
+//=======================================================================
+var TodoModel = require('./db')
+
+
+
+//Send HTML to clients
+app.get('/', function(req, res){
+    res.sendFile('./index.html', {root: '.'})
+})
+
+
+//building CRUD:
+//read
+app.get('/todo', function(req, res, next){
+    TodoModel.find({}, function(err, data){
+        if (err) { 
+            next(err) 
+        }
+        else {
+            res.send(data)
+        }
+    })
+})
+
+//create
+app.post('/todo', function(req, res){
+    var newTodo = new TodoModel({
+        text: req.body.todoText
+    })
+    newTodo.save(function(err){
+        if (err) { 
+            next(err) 
+        }
+        else {
+            res.send({success:'success!'})
+        }
+    })
+})
+
+//update (incomplete/complete)
+app.post('/todo/done', function(req, res){
+    console.log('its done!')
+
+    // mongoose 
+    TodoModel.findOne({_id: req.body._id}, function(err, doc){
+        console.log(doc)
+        if (err) { 
+            next(err) 
+        }
+        else {
+            doc.done = !doc.done
+            doc.save(function(err){
+                if(err){
+                    next(err)
+                }
+                else{
+                    res.send({success:'success!'})
+                }
+            })
+        }
+    })
+})
+
+//delete
+app.delete('/todo/:_id', function(req, res, next){
+
+    TodoModel.remove({_id: req.params._id}, function(err){
+        if (err) { 
+            next(err) 
+        }
+        else {
+            res.send({success:'success!'})
+        }
+    })
+})
+
+
+
+//where next(err) goes depending on error
+app.use(function(req, res, next){
+    res.status(404).send("not found")
+})
+
+//where next(err) goes depending on error
+app.use(function(err, req, res, next){
+    res.status(500).send("oops")
+})
+//=====================================================================
 
 app.listen(8080)
