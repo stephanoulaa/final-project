@@ -1,12 +1,8 @@
 ****SCHEDULE****
 
 9/19: 
--present for raphael
-
-9/20:
--make final changes:
-add "bitcoin for cash" to bitcoin atm statement
-background color
+-last changes:
+try to connect to domain
 
 
                                     **FORMATTING**

@@ -1,21 +1,114 @@
+/*
 body {
     background: linear-gradient(to bottom right, royalblue, skyblue);
 }
+*/
+
+
+/* Ibrahim Jabbari -- www.ibrahimjabbari.com */
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+body {
+  background-image: url(image/world-map.jpg);
+}
+.plate {
+  width: 410px;
+  margin: 10% auto;
+}
+.shadow {
+  color: #fff;
+  font-family: Arvo;
+  font-weight: bold;
+  text-shadow:
+    -3px -3px 0 #222,
+    3px -3px 0 #222,
+    -3px 3px 0 #222,
+    3px 3px 0 #222,
+    4px 4px 0 #fff,
+    5px 5px 0 #fff,
+    6px 6px 0 #fff,
+    7px 7px 0 #fff;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  transform: scaleY(0.7);
+  -webkit-transform: scaleY(0.7);
+  -moz-transform: scaleY(0.7);
+  margin:0;
+  text-align: center;
+}
+.script {
+  font-family: "Seaweed Script";
+  color: darkgrey;
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  margin:0;
+}
+.script span {
+  background-color: #222;
+  padding: 0 0.3em;
+}
+.script:before {
+  content:"";
+  display: block;
+  position: absolute;
+  z-index:-1;
+  top: 50%;
+  width: 100%;
+  border-bottom: 3px solid #fff;
+}
+.text1 {
+  color: saddlebrown;
+  font-size: 60px;
+}
+.text2 {
+  color: saddlebrown;
+  font-size: 169px;
+}
+.text3 {
+  color: saddlebrown;
+  font-size: 100px;
+}
+
+
 
 
 .row {
     margin-left: 215px;
-    padding-top: 50px; 
-    color: black;
+    padding-bottom: 100px; 
+    color: white;
     font-family: "Andale Mono";
+    position: relative;
+    bottom: 150px;
 }
 
+/*
 .headers {
-    color: black;
+    color: white;
     font-family: "Andale Mono";
     text-align: center;
 }
+*/
 
+input {
+    font:small-caption;
+    font-size:16px;
+}
+
+.username {
+    color: black;
+}
+
+.password {
+    color: black;
+}
+
+.submit {
+    color: black;
+}
+
+
+/*
 .image {
     text-align: center;
 }
@@ -28,3 +121,4 @@ body {
     position: relative;
     bottom: 300px;
 }
+*/

@@ -1,6 +1,6 @@
 body {
 /*    background-color: thistle;*/
-    background-color: lightsteelblue;
+    background-color: tan;
     position: relative;
 }
 
@@ -18,7 +18,7 @@ body {
 .nav {
     padding-left: 50px;
     padding-top: 50px;
-    border-bottom: 5px double cornflowerblue;
+    border-bottom: 5px double firebrick;
 }
 
 .navbar-brand {
@@ -26,8 +26,8 @@ body {
 }
 
 .navbar-brand:hover {
-  border: 5px solid cornflowerblue;
-  background-color: cornflowerblue;
+  border: 5px solid firebrick;
+  background-color: firebrick;
 }
 
 #validate {

@@ -1,6 +1,6 @@
 body {
 /*    background-color: thistle;*/
-    background-color: lightsteelblue;
+    background-color: tan;
 }
 
 #header {
@@ -17,7 +17,7 @@ body {
 .nav {
     padding-left: 50px;
     padding-top: 50px;
-    border-bottom: 5px double cornflowerblue;
+    border-bottom: 5px double firebrick;
 }
 
 .navbar-brand {
@@ -25,8 +25,8 @@ body {
 }
 
 .navbar-brand:hover {
-  border: 5px solid cornflowerblue;
-  background-color: cornflowerblue;
+  border: 5px solid firebrick;
+  background-color: firebrick;
 }
 
 #validate {
@@ -75,8 +75,8 @@ ul li {
 
 #app {
     text-align: center;
-    border: 5px solid mediumslateblue;
-    background-color: mediumslateblue;
+    border: 5px solid firebrick;
+    background-color: firebrick;
     /*before it was antinuewhite w/thistle backgorund color*/
 }
 
