@@ -2,7 +2,11 @@
 
 9/19: 
 -present for raphael
--finish deployment
+
+9/20:
+-make final changes:
+add "bitcoin for cash" to bitcoin atm statement
+background color
 
 
                                     **FORMATTING**
