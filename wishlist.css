@@ -1,6 +1,6 @@
 body {
 /*    background-color: thistle;*/
-    background-color: skyblue;
+    background-color: lightsteelblue;
 }
 
 #header {
@@ -75,8 +75,8 @@ ul li {
 
 #app {
     text-align: center;
-    border: 5px solid mediumpurple;
-    background-color: mediumpurple;
+    border: 5px solid mediumslateblue;
+    background-color: mediumslateblue;
     /*before it was antinuewhite w/thistle backgorund color*/
 }
 

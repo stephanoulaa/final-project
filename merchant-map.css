@@ -1,6 +1,6 @@
 body {
 /*    background-color: thistle;*/
-    background-color: skyblue;
+    background-color: lightsteelblue;
     position: relative;
 }
 
@@ -58,8 +58,8 @@ body {
     font-family: "Courier New";
     text-align: center;
     color: black;
-/*    border: 25px solid thistle;*/
-/*    background-color: thistle;*/
+/*    border: 25px solid mediumslateblue;*/
+/*    background-color: mediumslateblue;*/
 }
 
 .footer {
