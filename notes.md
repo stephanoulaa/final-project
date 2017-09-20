@@ -1,8 +1,7 @@
 ****SCHEDULE****
 
-9/19: 
--last changes:
-try to connect to domain
+9/20:
+-try to connect to domain
 
 
                                     **FORMATTING**

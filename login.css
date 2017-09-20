@@ -9,11 +9,22 @@ body {
 @import url(https://fonts.googleapis.com/css?family=Arvo:700);
 @import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
 body {
-  background-image: url(image/world-map.jpg);
+/*  background-image: url(image/world-map.jpg);*/
 }
+
+.background {
+    opacity: 0.5;
+    z-index: -1;
+}
+
+
 .plate {
   width: 410px;
   margin: 10% auto;
+  position: absolute;
+  top: 50px;
+  left: 525px;
+  opacity: 0.8;
 }
 .shadow {
   color: #fff;
@@ -75,11 +86,11 @@ body {
 
 .row {
     margin-left: 215px;
-    padding-bottom: 100px; 
+    padding-bottom: 500px; 
     color: white;
     font-family: "Andale Mono";
-    position: relative;
-    bottom: 150px;
+    position: absolute;
+    top: 50px;
 }
 
 /*

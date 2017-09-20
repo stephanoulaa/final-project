@@ -1,11 +1,14 @@
 body {
 /*    background-color: thistle;*/
-    background-color: tan;
+    background: #9cb8b3; 
+    padding: 20px 60px;
     position: relative;
 }
 
+
 #header {
     text-align: center;
+    text-shadow: 2px 2px grey;
     font-family: "Courier New";
 /*
     border: 25px solid lightcoral;
@@ -16,9 +19,9 @@ body {
 }
 
 .nav {
-    padding-left: 50px;
+/*    padding-left: 50px;*/
     padding-top: 50px;
-    border-bottom: 5px double firebrick;
+    border-bottom: 5px double royalblue;
 }
 
 .navbar-brand {
@@ -26,15 +29,15 @@ body {
 }
 
 .navbar-brand:hover {
-  border: 5px solid firebrick;
-  background-color: firebrick;
+  border: 5px solid cornflowerblue;
+  background-color: cornflowerblue;
 }
 
 #validate {
     float: right;
     position: absolute;
     right: 50px;
-    top: 25px;
+    top: 70px;
 }
 
 #link {
@@ -50,7 +53,7 @@ body {
 
 #map {
     height: 400px;
-    width: 100%;
+    width: 92%;
     position: absolute;
 }
 

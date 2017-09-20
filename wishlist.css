@@ -1,23 +1,29 @@
 body {
 /*    background-color: thistle;*/
-    background-color: tan;
+/*    background-color: tan;*/
+/*    padding: 20px 60px;*/
+}
+
+/*possible header*/
+body { 
+    background: #9cb8b3; 
+    padding: 20px 60px;
 }
 
 #header {
     text-align: center;
+    text-shadow: 2px 2px grey;
     font-family: "Courier New";
-/*
-    border: 25px solid lightcoral;
-    background-color: lightcoral;
-*/
+/*    border: 25px solid lightcoral;*/
+/*    background-color: lightcoral;*/
     letter-spacing: 4px;
     padding-top: 25px;
 }
 
 .nav {
-    padding-left: 50px;
+/*    padding-left: 50px;*/
     padding-top: 50px;
-    border-bottom: 5px double firebrick;
+    border-bottom: 5px double royalblue;
 }
 
 .navbar-brand {
@@ -25,15 +31,15 @@ body {
 }
 
 .navbar-brand:hover {
-  border: 5px solid firebrick;
-  background-color: firebrick;
+  border: 5px solid cornflowerblue;
+  background-color: cornflowerblue;
 }
 
 #validate {
     float: right;
     position: absolute;
     right: 50px;
-    top: 45px;
+    top: 70px;
 }
 
 .footer {
@@ -49,8 +55,8 @@ body {
 #bit-header {
     text-align: center;
     padding-bottom: 50px;
+    padding-top: 25px;
     font-family: "Courier New";
-    color: dimgray;
 }
 
 
@@ -75,25 +81,27 @@ ul li {
 
 #app {
     text-align: center;
-    border: 5px solid firebrick;
-    background-color: firebrick;
+    border: 5px solid royalblue;
+    background-color: rgba(65, 105, 225, 0.4);
     /*before it was antinuewhite w/thistle backgorund color*/
 }
 
 
+/*
 #reminder {
     padding-top: 50px;
-/*    padding-bottom: 10px;*/
+    padding-bottom: 10px;
     padding-left: 70px;
     font-family: "Courier New";
     text-align: center;
 }
+*/
 
 #photos {
   /* Prevent vertical gaps */
   line-height: 0;
-   padding-top: 30px;
-    padding-left: 400px;
+   padding-top: 70px;
+    padding-right: 100px;
   -webkit-column-count: 5;
   -webkit-column-gap:   0px;
   -moz-column-count:    5;
@@ -109,43 +117,11 @@ ul li {
   opacity: .7;
 }
 
-/*
-.container {
-    padding-left: 400px;
+section {
+    height: 1000px;
+    width: 2000px;
+/*    z-index: -1;*/
 }
-*/
-
-/*
-#nike {
-    height: 50%;
-    width: 50%;
-}
-
-#nyc {
-    height: 50%;
-    width: 50%;
-}
-
-#cabezas {
-    height: 50%;
-    width: 50%;
-}
-
-#cheap-air {
-    height: 50%;
-    width: 50%;
-}
-
-#american {
-    height: 50%;
-    width: 50%;
-}
-
-#kalamata {
-    height: 50%;
-    width: 50%;
-}
-*/
 
 /* --------------------------TO DO LIST ==> WISH LIST----------------------------- */
 /*@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400);*/
@@ -225,7 +201,7 @@ li:hover {
 =============================================================================
 
 .footer {
-    padding-top: 100px;
+/*    padding-bottom: 300px;*/
 }
 
 .powered-by {
