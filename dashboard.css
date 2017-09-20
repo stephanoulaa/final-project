@@ -2,7 +2,7 @@ body {
 /*    background: linear-gradient(to bottom right, mediumpurple,  mediumaquamarine);*/
 /*    background-color: thistle;*/
     background-color: #DFDCE3;
-    padding: 30px 70px;
+    padding: 20px 60px;
     position: relative;
 }
 
@@ -53,7 +53,7 @@ body {
 #link {
     color: black;
     position: relative;
-    bottom: 1px;
+/*    bottom: 1px;*/
 }
 
 #exchange {
