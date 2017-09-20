@@ -1,6 +1,7 @@
 ****SCHEDULE****
 
 9/20:
+-fuss with colors more
 -try to connect to domain
 
 
