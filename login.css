@@ -9,7 +9,9 @@ body {
 @import url(https://fonts.googleapis.com/css?family=Arvo:700);
 @import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
 body {
-/*  background-image: url(image/world-map.jpg);*/
+    background-color: rgba(100,149,237,0.25);
+/*    background-color: rgba(240,128,128,0.3);*/
+    z-index: -1;
 }
 
 .background {

@@ -61,17 +61,23 @@ body {
     font-family: "Trebuchet MS";
     font-weight: bold;
     padding-top: 25px;
+/*    border: 15px solid #93C178;*/
+/*    background-color: #93C178;*/
 }
 
 #buyPrice {
     padding-left: 30px;
     font-family: "Trebuchet MS";
+/*    border: 15px solid #93C178;*/
+/*    background-color: #93C178;*/
 }
 
 #sellPrice {
     padding-left: 30px;
     font-family: "Trebuchet MS";
 /*    padding-bottom: 5px;*/
+/*    border: 15px solid #93C178;*/
+/*    background-color: #93C178;*/
 }
 
 .chart {
@@ -81,7 +87,6 @@ body {
     padding-left: 20px;
     padding-top: 50px;
 }
-
 
 .twitter {
     position: absolute;
