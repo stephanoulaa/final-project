@@ -1,6 +1,6 @@
 body {
 /*    background-color: thistle;*/
-    background: #9cb8b3; 
+    background: #DFDCE3; 
     padding: 20px 60px;
     position: relative;
 }
@@ -8,12 +8,10 @@ body {
 
 #header {
     text-align: center;
-    text-shadow: 2px 2px grey;
-    font-family: "Courier New";
-/*
+/*    text-shadow: 2px 2px grey;*/
+    font-family: "Palatino";
     border: 25px solid lightcoral;
     background-color: lightcoral;
-*/
     letter-spacing: 4px;
     padding-top: 25px;
 }
@@ -36,8 +34,9 @@ body {
 #validate {
     float: right;
     position: absolute;
-    right: 50px;
-    top: 70px;
+    right: 80px;
+    top: 92px;
+    background-color: #93C178;
 }
 
 #link {
@@ -49,16 +48,20 @@ body {
 #coinmap {
     height: 400px;
     width: 100%;
+    border: 25px solid thistle;
+    background-color: thistle;
 }
 
 #map {
     height: 400px;
     width: 92%;
     position: absolute;
+    border: 25px solid thistle;
+    background-color: thistle;
 }
 
 .header2 {
-    font-family: "Courier New";
+    font-family: "Trebuchet MS";
     text-align: center;
     color: black;
 /*    border: 25px solid mediumslateblue;*/

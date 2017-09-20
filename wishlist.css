@@ -6,16 +6,16 @@ body {
 
 /*possible header*/
 body { 
-    background: #9cb8b3; 
+    background: #DFDCE3; 
     padding: 20px 60px;
 }
 
 #header {
     text-align: center;
-    text-shadow: 2px 2px grey;
-    font-family: "Courier New";
-/*    border: 25px solid lightcoral;*/
-/*    background-color: lightcoral;*/
+/*    text-shadow: 2px 2px grey;*/
+    font-family: "Palatino";
+    border: 25px solid lightcoral;
+    background-color: lightcoral;
     letter-spacing: 4px;
     padding-top: 25px;
 }
@@ -38,8 +38,9 @@ body {
 #validate {
     float: right;
     position: absolute;
-    right: 50px;
-    top: 70px;
+    right: 80px;
+    top: 92px;
+    background-color: #93C178;
 }
 
 .footer {
@@ -56,7 +57,7 @@ body {
     text-align: center;
     padding-bottom: 50px;
     padding-top: 25px;
-    font-family: "Courier New";
+    font-family: "Trebuchet MS";
 }
 
 
@@ -81,8 +82,8 @@ ul li {
 
 #app {
     text-align: center;
-    border: 5px solid royalblue;
-    background-color: rgba(65, 105, 225, 0.4);
+    border: 5px solid cornflowerblue;
+    background-color: rgba(225, 105, 180, 0.4);
     /*before it was antinuewhite w/thistle backgorund color*/
 }
 
@@ -120,6 +121,9 @@ ul li {
 section {
     height: 1000px;
     width: 2000px;
+/*    border: 5px solid #93C178;*/
+/*    background-color: #93C178;*/
+    
 /*    z-index: -1;*/
 }
 
