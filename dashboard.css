@@ -1,13 +1,10 @@
 body {
-/*    background: linear-gradient(to bottom right, mediumpurple,  mediumaquamarine);*/
-/*    background-color: thistle;*/
     background-color: #DFDCE3;
     padding: 20px 60px;
     position: relative;
 }
 
 .nav {
-/*    padding-left: 10px;*/
     padding-top: 50px;
     border-bottom: 5px double royalblue;
 }
@@ -21,20 +18,8 @@ body {
     background-color: cornflowerblue;
 }
 
-/*
-.active {
-    border: 5px solid black;
-    background-color: black;
-    color: skyblue;
-    cursor: default;
-}
-*/
-
-
 #header {
     text-align: center;
-/*    text-shadow: 2px 2px hotpink;*/
-/*    font-size: 30px;*/
     font-family: "Palatino";
     border: 25px solid lightcoral;
     background-color: lightcoral;
@@ -53,7 +38,6 @@ body {
 #link {
     color: black;
     position: relative;
-/*    bottom: 1px;*/
 }
 
 #exchange {
@@ -61,27 +45,19 @@ body {
     font-family: "Trebuchet MS";
     font-weight: bold;
     padding-top: 25px;
-/*    border: 15px solid #93C178;*/
-/*    background-color: #93C178;*/
 }
 
 #buyPrice {
     padding-left: 30px;
     font-family: "Trebuchet MS";
-/*    border: 15px solid #93C178;*/
-/*    background-color: #93C178;*/
 }
 
 #sellPrice {
     padding-left: 30px;
     font-family: "Trebuchet MS";
-/*    padding-bottom: 5px;*/
-/*    border: 15px solid #93C178;*/
-/*    background-color: #93C178;*/
 }
 
 .chart {
-/*    border-top: 8px double mediumpurple;*/
     height: 60%;
     width: 60%;
     padding-left: 20px;
@@ -93,13 +69,6 @@ body {
     text-align: right;
     bottom: 125px;
     right: 65px;
-}
-
-
-.footer {
-/*    border: 15px solid palevioletred;*/
-/*    background-color: palevioletred;*/
-    
 }
 
 .powered-by {

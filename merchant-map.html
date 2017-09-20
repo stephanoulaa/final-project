@@ -6,18 +6,8 @@
         <link rel="stylesheet" href="merchant-map.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
         <link rel="shortcut icon" type="image/png" href="image/sigma.png">
-        <!--GOOGLE MAPS API-->
-<!--
-        <style>
-           #map {
-            height: 400px;
-            width: 100%;
-           }
-        </style>
--->
     </head>
     <body>
-        
         
         <div>
             <h1 id="header">WELCOME TO YOUR PERSONAL <span class="glyphicon glyphicon-bitcoin"></span>IT <span class="glyphicon glyphicon-bitcoin"></span>AG!</h1>
@@ -38,14 +28,12 @@
         <br>
         <a href="https://coinmap.org/#/world/39.36827915/48.16406250/2" target="_blank"><img id="coinmap" src="image/coinmap.png"/></a>
         <br>
-        <!--get bitcoin atm API to display map-->
+
         <h3 class="header2">See Where You Can Obtain Bitcoin For Cash All Around the World...</h3>
         <br>
-<!--            <div id="map"></div>-->
         <!--FOR REFERENCE: A bitcoin ATM is an internet machine that allows a person to exchange bitcoins and cash. ... Bitcoin kiosks are machines which are connected to the Internet, allowing the insertion of cash in exchange for bitcoins given as a paper receipt or by moving money to a public key on the blockchain.-->
-        
+        <!--bitcoin atm map-->
         <iframe id='map' src="https://fusiontables.googleusercontent.com/embedviz?q=select+col2+from+1FMcb8caPPj_XKmdX0OUtq5WJgYREpa9LqEZvNYM&viz=MAP&h=false&lat=17.381120794655&lng=13.576324266932&t=1&z=2&l=col2&y=2&tmplt=2&hml=GEOCODABLE"></iframe>
-        
         
         <footer class="footer">
             <div class="container">
@@ -54,92 +42,6 @@
                 </span>
             </div>
         </footer>
-        
-        
-        <!--GOOGLE MAPS API-->
-<!--
-        <script>
-              function initMap() {
-                  var autowerks = {lat: 40.0189615, lng: -105.2632795}
-                  var subway = {lat: 40.0141565, lng: -105.2295429}
-                  var seedFertilizer = {lat: 39.7488495, lng: -105.0011093}
-                  var alleyCat = {lat: 40.5786943, lng: -105.0781571}
-                  //not working rn
-//                  var okCupid = {lat: 40.7465000, lng: 74.0014000}
-                  var wholefoodschi = {lat: 41.8915783, lng: -87.6907863}
-                  var texasmuseum = {lat: 28.81652, lng: -96.9799186}
-                  var coupacafepaloalto = {lat: 37.4447028, lng: -122.2315373}
-                  var topofthehillgrilleMaine = {lat: 43.9421182, lng: -70.5454476}
-                  var latinHouseMiami = {lat: 25.7020988, lng: -80.3490108}
-                  var volsteadWashington = {lat: 47.6576014, lng: -117.4234303}
-                  
-//                var ozo = {lat: 40.017564, lng: -105.282169};
-//                var nederland = {lat: 39.9603849, lng: -105.5806919};
-                var map = new google.maps.Map(document.getElementById('map'), {
-                  zoom: 4,
-                  center: autowerks
-                });
-                  var marker = new google.maps.Marker({
-                      position: autowerks,
-                      map: map
-                  });
-                  var marker = new google.maps.Marker({
-                      position: subway,
-                      map: map
-                  });
-                  var marker = new google.maps.Marker({
-                      position: seedFertilizer,
-                      map: map
-                  });
-                  var marker = new google.maps.Marker({
-                      position: alleyCat,
-                      map: map
-                  });
-                  var marker = new google.maps.Marker({
-                      position: texasmuseum,
-                      map: map
-                  });
-                  var marker = new google.maps.Marker({
-                      position: coupacafepaloalto,
-                      map: map
-                  });
-                  var marker = new google.maps.Marker({
-                      position: topofthehillgrilleMaine,
-                      map: map
-                  });
-                  var marker = new google.maps.Marker({
-                      position: latinHouseMiami,
-                      map: map
-                  });
-                  var marker = new google.maps.Marker({
-                      position: volsteadWashington,
-                      map: map
-                  });
-                  //not working rn
-//                  var marker = new google.maps.Marker({
-//                      position: okCupid,
-//                      map: map
-//                  });
-                  var marker = new google.maps.Marker({
-                      position: wholefoodschi,
-                      map: map
-                  });
-//                var marker = new google.maps.Marker({
-//                  position: ozo,
-//                  map: map
-//                });
-//                var marker = new google.maps.Marker({
-//                  position: nederland,
-//                  map: map
-//                });
-                    
-              }
-            </script>
-            <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCr0HVHd5WZb3eQ5I4-zxJm0VhlY1XjXGU&callback=initMap">
-            </script>
--->
-        <!--^^GOOGLE MAPS API^^-->
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

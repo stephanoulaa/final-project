@@ -1,5 +1,4 @@
 body {
-/*    background-color: thistle; also was lightsteelblue*/
     background: #DFDCE3; 
     padding: 20px 60px;
 }
@@ -15,7 +14,6 @@ body {
 }
 
 .nav {
-/*    padding-left: 50px;*/
     padding-top: 50px;
     border-bottom: 5px double royalblue;
 }
@@ -50,15 +48,12 @@ body {
 }
 
 .row {
-/*    border: 3px double goldenrod;*/
     padding-top: 20px;
     border: 15px solid thistle;
     background-color: thistle;
 }
 
 .column2 {
-/*    border: 3px double blue;*/
-/*    border-radius: 50%;*/
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -92,11 +87,6 @@ body {
 #phone-text {
     font-family: "Trebuchet MS";
     padding-bottom: 50px;
-}
-
-.footer {
-/*    border: 15px solid palevioletred;*/
-/*    background-color: palevioletred;*/
 }
 
 .powered-by {

@@ -1,5 +1,4 @@
 body {
-/*    background-color: thistle;*/
     background: #DFDCE3; 
     padding: 20px 60px;
     position: relative;
@@ -8,7 +7,6 @@ body {
 
 #header {
     text-align: center;
-/*    text-shadow: 2px 2px grey;*/
     font-family: "Palatino";
     border: 25px solid lightcoral;
     background-color: lightcoral;
@@ -17,7 +15,6 @@ body {
 }
 
 .nav {
-/*    padding-left: 50px;*/
     padding-top: 50px;
     border-bottom: 5px double royalblue;
 }
@@ -42,7 +39,6 @@ body {
 #link {
     color: black;
     position: relative;
-/*    bottom: 1px;*/
 }
 
 #coinmap {
@@ -67,11 +63,6 @@ body {
     border: 0.5px solid #D133FF;
     background-color: rgba(209, 51, 255, 0.5);
     padding: 20px;
-}
-
-.footer {
-/*    border: 15px solid palevioletred;*/
-/*    background-color: palevioletred;*/
 }
 
 .powered-by {

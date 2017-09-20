@@ -1,16 +1,8 @@
-/*
-body {
-    background: linear-gradient(to bottom right, royalblue, skyblue);
-}
-*/
-
-
 /* Ibrahim Jabbari -- www.ibrahimjabbari.com */
 @import url(https://fonts.googleapis.com/css?family=Arvo:700);
 @import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
 body {
     background-color: rgba(100,149,237,0.25);
-/*    background-color: rgba(240,128,128,0.3);*/
     z-index: -1;
 }
 
@@ -84,8 +76,6 @@ body {
 }
 
 
-
-
 .row {
     margin-left: 215px;
     padding-bottom: 500px; 
@@ -94,14 +84,6 @@ body {
     position: absolute;
     top: 50px;
 }
-
-/*
-.headers {
-    color: white;
-    font-family: "Andale Mono";
-    text-align: center;
-}
-*/
 
 input {
     font:small-caption;
@@ -119,19 +101,3 @@ input {
 .submit {
     color: black;
 }
-
-
-/*
-.image {
-    text-align: center;
-}
-
-#world {
-    height: 100%;
-    width: 100%;
-    opacity: .9;
-    z-index:-1;
-    position: relative;
-    bottom: 300px;
-}
-*/

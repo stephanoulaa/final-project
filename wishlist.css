@@ -1,10 +1,3 @@
-body {
-/*    background-color: thistle;*/
-/*    background-color: tan;*/
-/*    padding: 20px 60px;*/
-}
-
-/*possible header*/
 body { 
     background: #DFDCE3; 
     padding: 20px 60px;
@@ -21,7 +14,6 @@ body {
 }
 
 .nav {
-/*    padding-left: 50px;*/
     padding-top: 50px;
     border-bottom: 5px double royalblue;
 }
@@ -51,15 +43,12 @@ body {
     color: black;
 }
 
-
-
 #bit-header {
     text-align: center;
     padding-bottom: 50px;
     padding-top: 25px;
     font-family: "Trebuchet MS";
 }
-
 
 /*mongo to do list*/
 .form {
@@ -84,19 +73,7 @@ ul li {
     text-align: center;
     border: 5px solid cornflowerblue;
     background-color: rgba(225, 105, 180, 0.4);
-    /*before it was antinuewhite w/thistle backgorund color*/
 }
-
-
-/*
-#reminder {
-    padding-top: 50px;
-    padding-bottom: 10px;
-    padding-left: 70px;
-    font-family: "Courier New";
-    text-align: center;
-}
-*/
 
 #photos {
   /* Prevent vertical gaps */
@@ -121,92 +98,9 @@ ul li {
 section {
     height: 1000px;
     width: 2000px;
-/*    border: 5px solid #93C178;*/
-/*    background-color: #93C178;*/
-    
-/*    z-index: -1;*/
 }
-
-/* --------------------------TO DO LIST ==> WISH LIST----------------------------- */
-/*@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400);*/
-
-/*
-body {
-    font: normal normal 13px/16px "Open Sans", sans-serif;
-}
-*/
-
-/*
-.wishlist{
-    padding: 20px;
-    width: 300px;
-    margin: 0 auto;
-    margin-top: 40px;
-    background: plum;
-    border-radius: 5px;
-}
-*/
-
-/*
-.wish {
-    border: 20px solid plum;
-    background-color: plum;
-}
-
-form {
-    display: inline-block;
-}
-
-input {
-    padding: 4px 15px 4px 5px;
-}
-*/
-
-/*
-#button{
-    display: inline-block;
-    background-color:#fc999b;
-    color: white;
-    border-radius: 5px;
-    text-align:center;
-    margin-top:2px;
-    padding: 5px 15px;
-}
-*/
-
-/*
-#button:hover {
-    cursor: pointer;
-    opacity: .8;
-}
-
-ol {
-    padding-left: 20px;
-}
-
-ol li { 
-    padding: 5px;
-    color: black;
-}
-*/
-
-/*ol li:nth-child(even){background: #dfdfdf;}*/
-
-/*
-.strike {
-    text-decoration: line-through;
-}
-
-li:hover {
-  cursor: pointer;
- }
-*/
 
 =============================================================================
-
-.footer {
-/*    padding-bottom: 300px;*/
-}
 
 .powered-by {
     color: black;

@@ -1,18 +1,3 @@
-//Web Scraping Attempt
-
-//var request = require('request')
-//var cheerio = require('cheerio')
-//
-//request('https://www.coinbase.com/dashboard', function(err, response, html){
-//    var $ = cheerio.load(html)
-//    console.log($('.Flex__FlexBox-gYXKYY lakeGn'))
-//                //.attr('title')
-//
-//})
-
-
-//source for rates every year: https://www.buybitcoinworldwide.com/price/
-
 var ctx = $("#line-chart");
 //ctx.height = 500;
 //ctx.width = 500;
